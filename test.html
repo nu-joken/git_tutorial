@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="テスト用サイトです">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>テスト用サイト</title>
+        <link rel="icon" href="https://fast5-blog.com/wp-content/uploads/2022/04/undou_kata_strech_back_man.png">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        :root{
+            --contents-width: 400px;
+            --is-flex: block;
+        }
+        .wrapper{
+            border:1px solid black;
+            /* padding:10px; */
+            width:calc(100vw / 22px);
+            text-align: center;
+        }
+        /* .wrapper h1{
+            display:inline-block;
+        } */
+        .container{
+            width:calc(100% - 40px);
+            background:rgb(243, 243, 243);
+            padding:10px;
+            margin:10px;
+            display:var(--is-flex);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .contents{
+            width:var(--contents-width);
+            border:5px solid yellowgreen;
+            background:rgb(255, 220, 255);
+            border-radius: 30px;
+            margin:10px;
+            padding:10px;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+            transition:0.25s;
+            /* text-align: center; */
+        }
+        .content-img{
+            text-align: center;
+        }
+        .contents:hover{
+            transform:translate(5px,5px);
+            box-shadow: none;
+        }
+        .contents h2{
+            font-family: monospace;
+            font-size: 30px;
+        }
+        .contents img{
+            width:75%;
+        }
+        .date{
+            font-size:10px;
+            color:gray;
+        }
+        .red-text{
+            color:red;
+            font-weight:bold;
+        }
+
+        .description{
+            background:lightcyan;
+            padding:10px 30px;
+            margin:30px;
+            border-radius: 40px;
+        }
+    </style>
+    <body>
+        <input type="range" id="value" min="100" max="880"><span id="ranran">待て</span><span id="ranran2">混て</span>
+        <input type="checkbox" id="flex-sel">
+        <label for="flex-sel">Flex(横並び)</label>
+        <span>　↓ここから下の部分を作ってみよう！！！↓</span>
+        <div class="wrapper">
+            <h1>私の投稿を紹介します
+            </h1>
+            <div class="container">
+                <div class="contents" id="getContentWidth">
+                    <h2>XPS１３を紹介します</h2>
+                    <div class="content-img">
+                        <img src="https://fast5-blog.com/wp-content/uploads/2022/06/PSX_20220620_075347.jpg" alt="XPSの画像です">
+                    </div>
+                    <p class="date">2022/06/25</p>
+                    <p>Dell XPS13 9310です。DellフラッグシップモデルのノートPCです。</p>
+                    <p><span class="red-text">13.4インチ3.5K OLED</span>の高精細で美しい画面を搭載し、超極細ベゼル搭載で、13インチとしては最も小型サイズに収めています。</p>
+                </div>
+                <div class="contents">
+                    <h2>私のデスク紹介</h2>
+                    <div class="content-img">
+                        <img src="https://fast5-blog.com/wp-content/uploads/2022/05/PSX_20220423_105544.jpg" alt="デスクの画像です">
+                    </div>
+                    <p class="date">2022/06/26</p>
+                    <p>私のデスクです。デスクは電動昇降デスクで、<u>140cm × 70cm の大きな天板</u>を搭載しています。</p>
+                    <p>モニターは27インチ4Kディスプレイで、モニターアームで支えています。</p>
+                </div>
+                <div class="contents">
+                    <h2>福島県紹介</h2>
+                    <div class="content-img">
+                        <img src="https://fast5-blog.com/wp-content/uploads/2022/06/map-fukushima.jpg" alt="福島の画像です">
+                    </div>
+                    <p class="date">2020/2/25</p>
+                    <p>福島県です。福島県は大きく３つに分かれています。</p>
+                    <ul>
+                        <li><p>会津地方</p></li>
+                        <li><p>中通り</p></li>
+                        <li><p>浜通り</p></li>
+                    </ul>
+                    <p>ここ郡山は、福島県の中央にあり、交通のアクセスも良く、人口も非常に多いです。</p>
+                </div>
+                <div class="contents">
+                    <h2>福島県紹介</h2>
+                    <div class="content-img">
+                        <img src="https://fast5-blog.com/wp-content/uploads/2022/06/map-fukushima.jpg" alt="福島の画像です">
+                    </div>
+                    <p class="date">2020/2/25</p>
+                    <p>福島県です。福島県は大きく３つに分かれていて、左から、<b>会津地方、中通り、浜通り</b>と分かれています。</p>
+                    <p>ここ郡山は、福島県の中央にあり、交通のアクセスも良く、人口も非常に多いです。</p>
+                </div>
+                <div class="contents">
+                    <h2>アニメ紹介</h2>
+                    <div class="content-img">
+                        <img src="https://spy-family.net/assets/img/episodes/episode10_1.jpg" alt="アーニャ">
+                    </div>
+                    <p class="date">2022/06/28</p>
+                    <p>Spy&Familyというアニメは非常におすすめ。世界平和のため、この少女が</p>
+                </div>
+                <div class="contents">
+                    <h2>私のメインPC</h2>
+                    <div class="content-img">
+                        <img src="https://fast5-blog.com/wp-content/uploads/2022/01/PSX_20220131_090254-scaled.jpg" alt="Macbook Airと　Dell Inspiron">
+                    </div>
+                    <p class="date">2021/12/10</p>
+                    <p>現在のメインPCはMacbook Airである。もともとDell Inspiron 14を使っていたが、<b>ディスプレイの解像度がFHDと低い</b>ことや、<b>キーボードがUS(英語)配列</b>でないことに不満を抱き、Macを購入するに至った。</p>
+                    <p>その結果最高でーすKadoです。</p>
+                </div>
+                <div class="contents">
+                    <h2>タイトル</h2>
+                    <div class="content-img">
+                        <img src="" alt="ここに画像が表示されます">
+                    </div>
+                    <p class="date">2021/12/10</p>
+                    <p>ここにテキストを記入します。</p>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h3>条件</h3>
+            <ol>
+                <li><p>タイトル、画像、説明が書いてあること</p></li>
+                <li><p>親要素(divまたはsection、等）で囲われていること</p></li>
+                <li><p>説明の中に、span要素を入れて、少なくとも一箇所以上テキストのスタイルを変更させること<br>　=> <span class="red-text">こんな感じ</span>で適用させるように</p></li>
+                <li><p>画像の大きさが適切であること</p></li>
+                <li><p>中央寄せ、独自のカスタマイズはもちろんOK！</p></li>
+            </ol>
+        </div>
+    </body>
+    <script>
+        'use strict';        
+        const set = document.documentElement.style;
+        const value_id = document.getElementById("value");
+        
+        // const contents_id = document.getElementById("contents");
+        const is_flex = document.getElementById("flex-sel");
+        const ranran_id = document.getElementById("ranran");
+        const ranran_more = document.getElementById("ranran2");
+        const ranranran = document.getElementById("getContentWidth");
+        window.addEventListener("DOMContentLoaded",()=>{
+            value_id.value = 250;
+            setFlex();
+            value_set();
+        })
+        value_id.addEventListener("input",()=>{
+            // console.log(value_id.value);
+            value_set();
+        });
+        function value_set(){
+            set.setProperty("--contents-width",`${value_id.value}px`);
+            // contents_id.style.width = `${value_id.value}px`;
+            ranran_id.textContent = `${value_id.value}px`;
+            setTimeout(()=>{
+                ranran_more.textContent = `実際: ${ranranran.clientWidth}px`;
+            },251);
+        }
+        is_flex.addEventListener("change",()=>{
+            setFlex();
+            value_set();
+        });
+        function setFlex(){
+            if(is_flex.checked){
+                set.setProperty("--is-flex","flex");
+            }else{
+                set.setProperty("--is-flex","block");
+            }
+        }
+        window.addEventListener("resize",()=>{
+            value_set();
+        });
+    </script>
+</html>
